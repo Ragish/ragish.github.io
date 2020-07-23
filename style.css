@@ -442,6 +442,7 @@ div.pricing-table .panel .panel-heading h3{
     font-size: 14pt;
     font-weight: 900;
 }
+.intro h1 {font-size: 33px;line-height: 0;}
 
 .pricing-intro h2{
     margin-bottom: 20px;
