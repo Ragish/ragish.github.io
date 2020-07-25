@@ -891,7 +891,7 @@ p.lead{
 .percent:after {
     content: "%";
     font-size: 0.8em;
-    margin-left: 0.1em;
+    margin-left: 0.1em; 
 }
 .skillBar {
     margin-left: -40px;
