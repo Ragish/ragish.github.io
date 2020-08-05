@@ -1105,3 +1105,8 @@ p.lead{
     background: none repeat scroll 0 0 #262626;
 }
 
+@media only screen and (max-width: 600px) {
+  .jumbotron .intro container {
+    display: none;
+  }
+}
