@@ -826,6 +826,7 @@ p.lead{
 .portfolio-block{
     overflow: hidden;
     height: 188px;
+    box-shadow: 1px 0px 4px #666;
 }
 .portfolio-block .portfolio-caption{
     -webkit-animation-name: fadeOutDown;
