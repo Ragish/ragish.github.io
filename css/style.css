@@ -1580,3 +1580,5 @@ padding-bottom:120px;
 .btn-full {
     width: 100%;
 }
+
+.isotope-item {height: 200px;overflow: hidden;}
