@@ -1321,6 +1321,7 @@ content: "";
     overflow: hidden;
     position: relative;
     margin:1.2% 1.2% 0 0;
+    box-shadow: 3px 2px 4px 1px #ddd;
 }
 
 .portfolio-items article *
