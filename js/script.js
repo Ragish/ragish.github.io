@@ -173,60 +173,60 @@ $(document).ready(function () {
     //         e();
     //     }
     // };
-    e.fullWidth();
-    e.ajax();
-    $(function () {
-        $(".chart").appear(function () {
-            $(".chart").easyPieChart({
-                easing: "easeOutBounce",
-                barColor: "#474D5D",
-                size: "150",
-                lineWidth: 15,
-                animate: 2e3,
-                onStep: function (e, t, n) {
-                    $(this.el).find(".percent").text(Math.round(n));
-                },
-            });
-        });
-    });
-    $(".skillBar li").each(function () {
-        $(this).appear(function () {
-            $(this).animate({ opacity: 1, left: "0px" }, 2e3);
-            var e = $(this).find("span").attr("data-width");
-            $(this)
-                .find("span")
-                .animate({ width: e + "%" }, 2200, "easeOutBounce");
-        });
-    });
-    $(".validate").validate();
-    var r = $("#contactform");
-    var i = $("#contactForm_submit");
-    var s = $(".form-respond");
-    $(document).on("submit", "#contactform", function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: "sendemail.php",
-            type: "POST",
-            dataType: "html",
-            data: r.serialize(),
-            beforeSend: function () {
-                s.fadeOut();
-                i.html("Sending....");
-            },
-            success: function (e) {
-                r.fadeOut(300);
-                s.html(e).fadeIn(1e3);
-                setTimeout(function () {
-                    s.html(e).fadeOut(300);
-                    $("#name, #email, #message").val("");
-                    r.fadeIn(1800);
-                }, 4e3);
-            },
-            error: function (e) {
-                console.log(e);
-            },
-        });
-    });
+    // e.fullWidth();
+    // e.ajax();
+    // $(function () {
+    //     $(".chart").appear(function () {
+    //         $(".chart").easyPieChart({
+    //             easing: "easeOutBounce",
+    //             barColor: "#474D5D",
+    //             size: "150",
+    //             lineWidth: 15,
+    //             animate: 2e3,
+    //             onStep: function (e, t, n) {
+    //                 $(this.el).find(".percent").text(Math.round(n));
+    //             },
+    //         });
+    //     });
+    // });
+    // $(".skillBar li").each(function () {
+    //     $(this).appear(function () {
+    //         $(this).animate({ opacity: 1, left: "0px" }, 2e3);
+    //         var e = $(this).find("span").attr("data-width");
+    //         $(this)
+    //             .find("span")
+    //             .animate({ width: e + "%" }, 2200, "easeOutBounce");
+    //     });
+    // });
+    // $(".validate").validate();
+    // var r = $("#contactform");
+    // var i = $("#contactForm_submit");
+    // var s = $(".form-respond");
+    // $(document).on("submit", "#contactform", function (e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: "sendemail.php",
+    //         type: "POST",
+    //         dataType: "html",
+    //         data: r.serialize(),
+    //         beforeSend: function () {
+    //             s.fadeOut();
+    //             i.html("Sending....");
+    //         },
+    //         success: function (e) {
+    //             r.fadeOut(300);
+    //             s.html(e).fadeIn(1e3);
+    //             setTimeout(function () {
+    //                 s.html(e).fadeOut(300);
+    //                 $("#name, #email, #message").val("");
+    //                 r.fadeIn(1800);
+    //             }, 4e3);
+    //         },
+    //         error: function (e) {
+    //             console.log(e);
+    //         },
+    //     });
+    // });
     jQuery(".nav a").on("click", function () {
         jQuery("#my-nav").removeClass("in").addClass("collapse");
     });
