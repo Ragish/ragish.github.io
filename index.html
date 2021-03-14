@@ -262,7 +262,23 @@
 				<div class="col-md-12">
 					<div id="portfolio-items" class="portfolio-items item_fade_in">
 						<article class="design photo">
-							<a class="image-link" href="images/portfolio/effix.png">
+							<!-- Begin popup image code. -->
+							<div id="pop-up-div" style="display:none; z-index:96; position:fixed; top:0px; right:0px; bottom:0px; left:0px; background-color:transparent;" onclick="CloseImagePopup('pop-up-div')">
+							
+							<!-- The div with the image. -->
+							<div id="pop-up-image-div" style="position:relative; display:block; z-index:97; max-width:100%; max-height:100%; margin:0px auto 0px auto; box-shadow:0px 0px 20px 1px #ccc; background-color:transparent;">
+							
+							<!-- The image in the popup. -->
+							<img id="pop-up-image" src="images/portfolio/effix.png" style="z-index:98; border:none; outline:none; margin-top:0; max-width:100%; max-height:100%; width:auto; height:auto;">
+							
+							<!-- Optional "close popup" icon -->
+							<img src="//www.willmaster.com/images/closeboxXbold25.png" style="position:absolute; top:0; right:0; z-index:99; cursor:pointer;" onclick="CloseImagePopup('pop-up-div')">
+							
+							</div><!-- id="pop-up-image-div" -->
+							
+							</div><!-- id="pop-up-div" -->
+							<!-- End of popup image code. -->
+							<a href="images/portfolio/effix.png">
 								<img src="images/portfolio/effix.png" alt="image" />
 								<div class="overlay">
 									<div class="item-info">
@@ -803,11 +819,6 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/gmap-settings.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="javascript">
-				$(document).ready(function() {
-			$('.image-link').magnificPopup({type:'image'});
-			});
-	</script>
 	<!-- Js Library -->
 </body>
 
