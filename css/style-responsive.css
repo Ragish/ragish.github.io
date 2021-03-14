@@ -243,6 +243,6 @@ transform: rotate(75deg);
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 .portfolio-items article {
-    width: 23.8%;
+    width: 23.2%;
 }
 }
