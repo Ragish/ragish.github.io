@@ -376,3 +376,8 @@ var processLine = {
         });
     },
 };
+
+//portfolio image popup
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
